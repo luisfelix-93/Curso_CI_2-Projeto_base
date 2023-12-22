@@ -27,4 +27,8 @@ jobs:
        push: true
        tags: luisffilho/go_ci:${{github.ref_name}}
     
+    - name: Download main compilado
+      uses: actions/download-artifact@v3
+      with:
+        name: programa
           
